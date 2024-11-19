@@ -1,0 +1,24 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+    -   id: trailing-whitespace  # Removes trailing whitespace
+    -   id: end-of-file-fixer   # Adds empty line at end of file
+    -   id: check-yaml          # Checks YAML syntax
+    -   id: check-toml          # Checks TOML syntax
+    -   id: debug-statements    # Checks for debugger imports and py37+ breakpoint()
+
+-   repo: https://github.com/psf/black
+    rev: 24.2.0
+    hooks:
+    -   id: black              # Python code formatter
+
+-   repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
+    hooks:
+    -   id: flake8            # Style guide enforcement
+
+-   repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.8.0
+    hooks:
+    -   id: mypy              # Static type checker
